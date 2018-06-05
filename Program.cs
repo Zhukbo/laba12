@@ -10,24 +10,24 @@ namespace Laba
         {
             try
             {
-               /* Song first = new Song("Thunder", "LoLo", 50, "ZXit");
+                Song first = new Song("Thunder", "LoLo", 50, "ZXit");
                 Song second = new Song("Abc", "bomb", 179, "fgfg");
-                Song fifth = new Song("Ride", "Twenty One Pilots", 201, "POlka");*/
+                Song fifth = new Song("Ride", "Twenty One Pilots", 201, "POlka");
                 Song third = new Song();
                 Console.WriteLine(third.Album);
 
 
 
                 MusicList listofmusic = new MusicList();
-                /*listofmusic.AddSong(first);
+                listofmusic.AddSong(first);
                 listofmusic.AddSong(second);
                 listofmusic.AddSong(third);
-                listofmusic.AddSong(fifth);*/
+                listofmusic.AddSong(fifth);
 
-                //Console.WriteLine(DateTime.Now.Day + " ");
+                
 
 
-                //listofmusic.SortingDuration();
+                listofmusic.SortingDuration();
                 listofmusic.SortingAlbum();
 
 
@@ -36,10 +36,7 @@ namespace Laba
 
                 int lengthCollect = listofmusic.TakeLengthCollection;
 
-                /*for(int i = 0; i < lengthCollect; i++)
-                {
-                    Console.WriteLine(listofmusic[i].Album);
-                }*/
+
                 for (int i = 0; i < lengthCollect; i++)
                 {
                     Console.WriteLine(listofmusic[i].Album + " тривалість " + listofmusic[i].Duration);
@@ -56,7 +53,7 @@ namespace Laba
         private int duration;
         private string album;
 
-        /*public Song(string name, string performer, int duration, string album) : this()
+        public Song(string name, string performer, int duration, string album) : this()
         {
             this.name = name;
             this.performer = performer;
@@ -70,7 +67,7 @@ namespace Laba
             this.duration = 40;
             this.album = "Vesna";
 
-        }*/
+        }
         public string Name
         {
             get
